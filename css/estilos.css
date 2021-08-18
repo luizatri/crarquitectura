@@ -1,0 +1,311 @@
+
+/* COLORES-----------------
+
+#3C5053
+#587B7F
+#75B9BE
+#A8CCC9
+#B3D6C6
+#C7D66D
+#EBC400
+#E3AD19
+
+*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+
+
+/* ==========================================
+
+GLOBALES
+
+============================================= */
+
+
+
+
+/* BODY -------------- */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    color:#3F3E3B
+}
+
+
+
+
+/* NAV BAR----------- */
+
+
+header {
+    background-color: #f4f3f2;
+}
+
+.btn-warning {
+    background: #EBC400;
+    margin-left: 20px;
+    border-radius: .15rem;
+
+}
+
+
+.imgOverlay {
+    position: relative;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+
+/* ==========================================
+
+INDEX
+
+============================================== */
+
+
+
+
+/* ==========================================
+
+PÁGINA SERVICIOS
+
+============================================== */
+
+
+/* imagen header servicio ------*/
+
+.gridServicios {
+    display: grid;
+    grid-template-areas: "img"
+                         "tex"
+                         "title"
+                         "serv";
+    grid-template-rows: 500px 400px 80px 500px;
+    height: 1600px;
+    width: 100%;
+}
+
+.imgServ {
+    grid-area: img;
+    background-image: url("../images/ambientes-bedroom.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textServ {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo';
+    color: #ffffff;
+    margin-left: 150px;
+    font-size: 4rem;
+}
+
+.tituloOS {
+    grid-area: title;
+    background-color: #2b2929;
+    text-align: center;
+    padding-top: 50px;
+    color: #ffffff;
+
+}
+.otrosServ {
+    background-color: #2b2929;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end;
+    width: 100%;
+    grid-area: serv;
+}
+
+.descripServ {
+    grid-area: tex;
+    display: flex;
+    flex-direction: row;
+}
+
+    .descripTitle {
+        flex-basis: 2500px;
+        text-align: end;
+        padding-right: 20px;
+        padding-top: 10%;
+        font-size: 1.5rem;
+    }
+
+    .descripText {
+        flex-basis: 2500px;
+        padding-top: 10%;
+    }
+
+.otrosServ1 {
+    background-image: url("../images/casa5.jpg");
+
+}
+
+.otrosServ2 {
+    background-image: url("../images/casa.jpg");
+}
+
+.otrosServ3 {
+    background-image: url("../images/ambientes-living-room.jpg");
+}
+
+.otrosServ1,
+.otrosServ2,
+.otrosServ3 {
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.otrosServ1 h3,
+.otrosServ2 h3,
+.otrosServ3 h3{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 45%
+}
+
+
+
+/* ==========================================
+
+PÁGINA CLIENTES
+
+============================================== */
+
+
+/*imagen header clientes ----------------------*/
+
+
+.contenidoImgCli {
+    background-image: url("../images/ambiente_3.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.textCli {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    font-family: 'Zen Tokyo Zoo';
+    color: #ffffff;
+    margin-left: 150px;
+    font-size: 4rem;
+}
+
+/*  grid --------------------*/
+
+
+.gridClientes {
+    display: grid;
+    grid-template-areas: "tex tex tex"
+                         "img1 img2 img3"
+                         "img4 img5 img6";
+    grid-template-columns: 33.3% 33.5% 33.5%;
+    grid-template-rows: 200px 400px 400px;
+    background-color: #2b2929;
+
+}
+
+.bloqueTextos {
+    grid-area: tex;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.textClientes {
+    color: #ffffff;
+    text-align: center;
+}
+
+.otrosCli1 {
+    grid-area: img1;
+    background-image: url("../images/casa5.jpg");
+}
+
+.otrosCli2 {
+    grid-area: img2;
+    background-image: url("../images/casa.jpg");
+}
+
+.otrosCli3 {
+    grid-area: img3;
+    background-image: url("../images/ambientes-living-room.jpg");
+}
+
+.otrosCli4 {
+    grid-area: img4;
+    background-image: url("../images/ambientes-living-room.jpg");
+}
+
+.otrosCli5 {
+    grid-area: img5;
+    background-image: url("../images/ambientes-living-room.jpg");
+}
+
+.otrosCli6 {
+    grid-area: img6;
+    background-image: url("../images/ambientes-living-room.jpg");
+}
+
+.otrosCli1,
+.otrosCli2,
+.otrosCli3,
+.otrosCli4,
+.otrosCli5,
+.otrosCli6 {
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.otrosCli1 h3,
+.otrosCli2 h3,
+.otrosCli3 h3,
+.otrosCli4 h3,
+.otrosCli5 h3,
+.otrosCli6 h3 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 45%
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+
+MEDIA QUERY 320px
+
+============================================== */
+
+
